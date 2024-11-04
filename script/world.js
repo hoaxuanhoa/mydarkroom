@@ -26,16 +26,16 @@ var World = {
   LANDMARKS: {},
   STICKINESS: 0.5, // 0 <= x <= 1
   LIGHT_RADIUS: 2,
-  BASE_WATER: 10,
-  MOVES_PER_FOOD: 2,
-  MOVES_PER_WATER: 1,
+  BASE_WATER: 999,
+  MOVES_PER_FOOD: 999,
+  MOVES_PER_WATER: 999,
   DEATH_COOLDOWN: 120,
   FIGHT_CHANCE: 0.20,
   BASE_HEALTH: 10,
   BASE_HIT_CHANCE: 0.8,
-  MEAT_HEAL: 8,
-  MEDS_HEAL: 20,
-  HYPO_HEAL: 30,
+  MEAT_HEAL: 999,
+  MEDS_HEAL: 999,
+  HYPO_HEAL: 999,
   FIGHT_DELAY: 3, // At least three moves between fights
   NORTH: [ 0, -1],
   SOUTH: [ 0,  1],
@@ -52,73 +52,73 @@ var World = {
     'bone spear': {
       verb: _('stab'),
       type: 'melee',
-      damage: 2,
-      cooldown: 2
+      damage: 999,
+      cooldown: 0.000001
     },
     'iron sword': {
       verb: _('swing'),
       type: 'melee',
-      damage: 4,
-      cooldown: 2
+      damage: 999,
+      cooldown: 0.000001
     },
     'steel sword': {
       verb: _('slash'),
       type: 'melee',
-      damage: 6,
-      cooldown: 2
+      damage: 999,
+      cooldown: 0.000001
     },
     'bayonet': {
       verb: _('thrust'),
       type: 'melee',
-      damage: 8,
-      cooldown: 2
+      damage: 999,
+      cooldown: 0.000001
     },
     'rifle': {
       verb: _('shoot'),
       type: 'ranged',
-      damage: 5,
-      cooldown: 1,
-      cost: { 'bullets': 1 }
+      damage: 999,
+      cooldown: 0.000001,
+      cost: { 'bullets': 0 }
     },
     'laser rifle': {
       verb: _('blast'),
       type: 'ranged',
-      damage: 8,
-      cooldown: 1,
-      cost: { 'energy cell': 1 }
+      damage: 9999,
+      cooldown: 0.0000001,
+      cost: { 'energy cell': 0 }
     },
     'grenade': {
       verb: _('lob'),
       type: 'ranged',
-      damage: 15,
-      cooldown: 5,
-      cost: { 'grenade': 1 }
+      damage: 99999,
+      cooldown: 0.00001,
+      cost: { 'grenade': 0 }
     },
     'bolas': {
       verb: _('tangle'),
       type: 'ranged',
       damage: 'stun',
-      cooldown: 15,
-      cost: { 'bolas': 1 }
+      cooldown: 0.000001,
+      cost: { 'bolas': 0 }
     },
     'plasma rifle': {
       verb: _('disintigrate'),
       type: 'ranged',
-      damage: 12,
-      cooldown: 1,
-      cost: { 'energy cell': 1 }
+      damage: 99999,
+      cooldown: 0.000001,
+      cost: { 'energy cell': 0 }
     },
     'energy blade': {
       verb: _('slice'),
       type: 'melee',
-      damage: 10,
-      cooldown: 2
+      damage: 99999,
+      cooldown: 0.00001
     },
     'disruptor': {
       verb: _('stun'),
       type: 'ranged',
       damage: 'stun',
-      cooldown: 15
+      cooldown: 0.0000001
     }
   },
 
